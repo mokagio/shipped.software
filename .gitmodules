@@ -3,3 +3,9 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:mokagio/shipped.software
+  # By using this we prevent Git from showing the submodule as changed after
+  # every deploy. We don't care about the state of the submodule, it's there
+  # only to avoid us having to switch between master where the source lives
+  # and gh-pages where the generated static HTML does. This is due to GitHub
+  # requiring the code for GitHub pages to live in the root of the repo.
+  ignore = all
