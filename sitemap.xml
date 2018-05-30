@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://shipped.software/categories/</loc>
+    <loc>https://shipped.software/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://shipped.software/</loc>
+    <loc>https://shipped.software/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://shipped.software/tags/</loc>
+    <loc>https://shipped.software/tags/</loc>
     <priority>0</priority>
   </url>
   
