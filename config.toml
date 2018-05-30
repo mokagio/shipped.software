@@ -3,5 +3,7 @@ languageCode = "en-us"
 title = "Shipped 📦"
 theme = "anybodyhome"
 
+MetaDataFormat = "yaml"
+
 [params]
   subtitle = "A blog about shipping software"
