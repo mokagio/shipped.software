@@ -1,7 +1,0 @@
-baseURL = "http://shipped.software"
-languageCode = "en-us"
-title = "Shipped 📦"
-theme = "anybodyhome"
-
-[params]
-  subtitle = "A blog about shipping software"
