@@ -1,0 +1,5 @@
+# To avoid gh-pages / master branch switching dance we have the gh-pages branch
+# as a submodule in the Hugo output folder, `public`.
+[submodule "public"]
+	path = public
+	url = git@github.com:mokagio/shipped.software
