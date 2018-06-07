@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <title>{{ .Site.Title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -11,20 +11,27 @@
   <link rel="canonical" href="{{ .Permalink }}">
 
   <!-- Custom CSS -->
-  <!-- Those css minifined and combined together. See combined-min.css below
   <link rel="stylesheet" type="text/css" href="/css/basscss.css">
-  <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="/css/main.css"> 
 
   <!-- Highlight -->
-  <!-- Also minified and combined into combined-min.css
-  <link rel="stylesheet" type="text/css" href="/css/highlight/styles/railscasts.css"> -->
+  <link rel="stylesheet" type="text/css" href="/css/highlight/styles/railscasts.css">
 
   <!-- Fonts -->
-  <!-- Combined and minified
   <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic'>
-  <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Lato:900,300'> -->
+  <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Lato:900,300'>
 
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/combined-min.css">
+  <!-- One day I'll figure out how to generate this minified combined stylesheet. That's not today though.
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/combined-min.css"> -->
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43554041-12"></script>
+  <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-43554041-12');
+  </script>
 </head>
 <body class="">

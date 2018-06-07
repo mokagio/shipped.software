@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster|Quicksand|Cutive+Mono';
 @charset "UTF-8";
 /*
 
@@ -24,6 +25,8 @@ html, body {
 img {
   width: auto;
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .site-wrap {
@@ -91,6 +94,14 @@ body {
 
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
+}
+
+.post-header h1 {
+  margin-top: 0;
+}
+
+.post p {
+  text-align: justify;
 }
 
 .posts {
@@ -263,7 +274,7 @@ h6,
   font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.2;
-  margin: 0.414em 0 0.5em;
+  margin: 1em 0 0.5em;
 }
 
 .social-icons {
@@ -284,9 +295,23 @@ h6,
     top: 0.1em;
 }
 
+.site-header .site-title {
+  font-family: 'Lobster', cursive;
+  font-size: 3.3rem;
+}
+
+.site-header .site-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 48em) {
   .site-header .site-title {
-    float: left;
+    /* This makes sense only if we had the navbar on the side
+     * float: left;
+     *
+     * See how the original theme looks
+     */
   }
 
   .meta,
@@ -303,7 +328,7 @@ h6,
 
   .h2,
   h2 {
-    font-size: 2.298rem;
+    font-size: 2rem;
   }
 
   .h3,
@@ -347,7 +372,7 @@ h6,
 @media screen and (max-width: 48em) {
   .h1,
   h1 {
-    font-size: 2.827rem;
+    font-size: 2.5rem;
   }
 
   .h2,
@@ -370,7 +395,11 @@ h6,
   }
 
   .site-header .site-title {
-    float: center;
+    /* This makes sense only if we had the navbar on the side
+     * float: center;
+     *
+     * See how the original theme looks
+     */
   }
 
   .site-header .site-nav {
@@ -390,17 +419,17 @@ h6,
 @media screen and (min-width: 64em) {
   .h1,
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .h2,
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .h3,
   h3 {
-    font-size: 2.249rem;
+    font-size: 1.8rem;
   }
 
   .h4,
@@ -429,14 +458,9 @@ h6,
   }
 }
 
-footer {
-  border-top: thin solid #f3f3f3;
-}
-
 footer,
 footer .wrap {
   color: #7a7a7a;
-  background-color: #fafafa;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   clear: both;
@@ -591,4 +615,29 @@ Copyright (c) 2014 Daniel Eden
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+twitterwidget {
+  margin: 1.8em auto !important;
+}
+
+/* BASSCSS overrides
+ *
+ * As far as I understand BASSCSS has evolved from the version in this theme.
+ * I'm not sure whether this is the best way to customize its behaviour, but it works.
+ */
+.measure {
+  max-width: 44rem;
+}
+
+.post a, .footer a {
+  color: chocolate;
+}
+
+.post a:hover, .footer a:hover {
+  color: saddlebrown;
+}
+
+.post-header a {
+  color: #333;
 }
