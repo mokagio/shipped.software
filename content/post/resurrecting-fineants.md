@@ -56,4 +56,4 @@ I live tweeted the process of getting the original Xcode 6 codebase to build in 
 
 ### Next steps
 
-The user survey showed some low hanging fruits to deliver a more valuable experience. The easier to tackle is adding bit of visualization on the goal progress and estiamted date of achievement.
+The user survey showed some low hanging fruits to deliver a more valuable experience. The easier to tackle is adding bit of visualization on the goal progress and estimated date of achievement.
