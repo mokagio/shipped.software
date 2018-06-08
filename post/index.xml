@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Shipped 📦 on Shipped 📦 </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>https://shipped.software/</link>
+    <title>Posts on Shipped 📦</title>
+    <link>https://shipped.software/post/</link>
+    <description>Recent content in Posts on Shipped 📦</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jun 2018 21:51:11 +1000</lastBuildDate>
     
+	<atom:link href="https://shipped.software/post/index.xml" rel="self" type="application/rss+xml" />
     
-    <updated>Fri, 08 Jun 2018 21:51:11 AEST</updated>
     
     <item>
       <title>Resurrecting fineants</title>
       <link>https://shipped.software/post/resurrecting-fineants/</link>
-      <pubDate>Fri, 08 Jun 2018 21:51:11 AEST</pubDate>
+      <pubDate>Fri, 08 Jun 2018 21:51:11 +1000</pubDate>
       
       <guid>https://shipped.software/post/resurrecting-fineants/</guid>
       <description>I recently submitted the first update in 3.5 years of fineants for review to the App Store.
@@ -22,4 +24,3 @@ I decided to start working on fineants again after such a long time because I no
     
   </channel>
 </rss>
-

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Shipped 📦</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="https://shipped.software/post/resurrecting-fineants/">
+
+  
+  <link rel="stylesheet" type="text/css" href="/css/basscss.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css"> 
+
+  
+  <link rel="stylesheet" type="text/css" href="/css/highlight/styles/railscasts.css">
+
+  
+  <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic'>
+  <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Lato:900,300'>
+
+  
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43554041-12"></script>
+  <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-43554041-12');
+  </script>
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure center">
+      <a href="https://shipped.software" class="site-title">Shipped 📦</a>
+      
+      <div class="clearfix"></div>
+    </div>
+    <div class="measure center">
+      <h2 class="site-subtitle">A blog about shipping software</h2>
+    </div>
+  </div>
+</header>
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2"><a href="https://shipped.software/post/resurrecting-fineants/">Resurrecting fineants</a></h1>
+        <span class="post-meta">Jun 8, 2018</span><br>
+        
+      </div>
+
+      <article class="post-content">
+      
+
+<p>I recently submitted the first update in 3.5 years of <a href="https://itunes.apple.com/au/app/fineants-saving-goals-tracker/id888444078?mt=8">fineants</a> for review to the App Store.</p>
+
+<p><img src="https://s3.amazonaws.com/assets.shipping.software/fineants-1.3.0.png" alt="Screenshot of fineants 1.3.0 on the App Store" /></p>
+
+<p>The app helps visualise delayed gratification to reach your saving goals. A big part of saving money is not spending them. Users can log the things they don&rsquo;t buy on fineants, keeping track of how much money they have been saving.</p>
+
+<p>I decided to start working on fineants again after such a long time because I noticed a small but steady stream of users and In-App Purchase upgrades.</p>
+
+<p><img src="https://s3.amazonaws.com/assets.shipping.software/fineants-lifetime-sales-2014-to-2018.png" alt="fineants's lifetime sales as of June 2018" /></p>
+
+<p><em>I wish I knew what caused that spike around October 2017.</em></p>
+
+<p>I asked myself, how far can I take this?</p>
+
+<p>I learnt a lot since the last update to the app. I&rsquo;ve also become very <strong>opinionated</strong>. This could be a fun way to apply some of those theories on how to execute on software products.</p>
+
+<p>One such opinion is the importance of the <strong>feedback loop</strong>. The faster you can get software in the users&rsquo; hands the more you can learn. The more your learn the better your products get.</p>
+
+<p>I bumped into this tweet from <a href="https://baremetrics.com/">Baremetrics</a>&rsquo; founder <a href="https://twitter.com/Shpigford/">Josh Pigford</a>:</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">22/ You will never attain the perfect product. The effort required to “polish” a product has diminishing returns. Yes, the details matter. But “shipped” is better than “perfect”. Startup graveyards are littered with companies who never actually launched anything at all.</p>&mdash; Josh Pigford (@Shpigford) <a href="https://twitter.com/Shpigford/status/1001840358626660352?ref_src=twsrc%5Etfw">May 30, 2018</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>It resonates a lot with me. Along the same lines is <a href="https://twitter.com/KentBeck">Kent Beck</a> <a href="http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast">quote</a>:</p>
+
+<blockquote>
+<p>Make it work. Make it right. Make it fast.</p>
+</blockquote>
+
+<p>There&rsquo;s been a lot of talk on how high the quality and polish bar is getting on the App Store in order to succeed. True. Does it have to be as polished on launch though? Sometimes polish and UX are a mask in front of a product that&rsquo;s not that useful anyway.</p>
+
+<p>I&rsquo;m a big proponent of incremental updates. Ship something good enough to learn from your users, then keep making it better and better.</p>
+
+<p>Upgrading an app written for iOS 7 straight to iOS 11 requires a bit of work. <em>More on this in another post</em>. Here are some of the <strong>compromises</strong> I made to ship as soon as I could.</p>
+
+<ul>
+<li>The nav bar icons are not homogeneous in size. I used custom views, which apparently iOS 11 broke for the <code>rightBarButton</code> item (link needed). Had to switch to plain <code>UIImage</code> for those. I got them to a point where they&rsquo;re decent enough, will tweak them later.</li>
+<li>The colors of the widget are exactly the same iOS uses.</li>
+<li>For some reason the action sheet shown from the settings sometimes has white tint, others black.</li>
+<li>The swipe on the cell has lost its animation and bounce. I could only get it to work without animating it.</li>
+</ul>
+
+<h3 id="room-for-improvement">Room for improvement</h3>
+
+<p>Being in touch with the users and getting their feedback is critical to develop a product they&rsquo;ll keep using, and recommend their friends.</p>
+
+<p>I surveyed those users that over time got in touch with me trough the contact features in the app. <em>More on this on another post</em>. I got 13 replies out of 183 emails, 7% success rate. Suboptimal for a survey, but good enough for me.</p>
+
+<p>A mistake I made though was to start working on the app before getting results from the survey. What if no one replied? It could have been a fun but pointless exercise.</p>
+
+<p>I live tweeted the process of getting the original Xcode 6 codebase to build in Xcode 9. That was fun and boosted my ego. It was also an utter waste of time. I estimate it took me at least twice as long that way.</p>
+
+<h3 id="next-steps">Next steps</h3>
+
+<p>The user survey showed some low hanging fruits to deliver a more valuable experience. The easier to tackle is adding bit of visualization on the goal progress and estiamted date of achievement.</p>
+
+      </article>
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="/index.xml"></a>
+
+</nav>
+
+          <small>
+            Copyright &#169; 2018<br>
+            Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> &amp; a customize version of <a href="https://github.com/azmelanar/hugo-theme-pixyll" target="_blank">Pixyll</a><br>
+            Opinionatedly typed by <a href="https://twitter.com/mokagio">Gio</a>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+</body>
+</html>
+
